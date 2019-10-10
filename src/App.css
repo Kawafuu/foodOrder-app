@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.App{
+    font-family: 'Roboto', sans-serif;
+    background-color:#3A3737;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+.app-wrapper{
+    padding-top:5rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+h1{
+    font-size: 1.2rem;
+}
+.item{
+    margin:1rem;
+    text-align: center;
+    background-color: #C4C4C4;
+    box-shadow: .4rem .4rem .6rem black;
+    cursor: pointer;
+}
+img{
+    opacity: 0.95;
+}
+.item-desc{
+    text-align: center;
+    max-width: 300px;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    width:100vw;
+    align-items: center;
+    background-color: #282424;
+    min-height: 6.5vh;
+    position: fixed;
+    z-index: 999;
+
+
+}
+.nav input{
+    width:45vw;
+    border-radius: 1rem;
+    background-color: #C4C4C4;
+}
+.D{
+background-color: #3A3737;
+}
+.L{
+background-color: rgba(152,147,147, 0.7)
+}
+.btn-mode{
+height: 2rem;
+width:2rem;
+border: none;
+border-radius: 100%;
+background-color: #ffffff;
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0.9;
+position: relative;
+left:4rem;
+}
+.btn-cart{
+    position: relative;
+    left:10rem;
+    border: none;
+    background-color: #C4C4C4;
+    padding:.5rem;
+    cursor: pointer;
+    border-radius: 10%;
+}
+.cart{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.cart h1{
+    display: none;
+}
+.cart h1{
+    color: white;
+}
+.cartOpen{
+    width:30vw;
+    position: fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    background: #282424;
+    opacity: 0.85;
+    display: flex;
+    align-items: center;
+    z-index: 1000000;
+    justify-content: center;
+    transition: .5s;
+}
+.cartText{
+    color:white;
+    font-size:1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+@media(max-width:768px){
+    .btn-cart{
+        left:3rem;
+    }
+    .btn-mode{
+        left:2rem;
+    }
+    
+}
